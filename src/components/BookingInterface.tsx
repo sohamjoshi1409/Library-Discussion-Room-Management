@@ -8,6 +8,7 @@ import { Badge } from './ui/badge';
 import { Calendar, Clock, Users, MapPin, Plus, Check, X, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { type User, type Room, type Booking, type Notification } from '../App';
+import type { JSX } from 'react/jsx-runtime';
 
 interface BookingInterfaceProps {
   currentUser: User;

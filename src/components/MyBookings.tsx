@@ -4,9 +4,10 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog';
-import { Calendar, Clock, MapPin, Users, Crown, User as UserIcon, TrendingUp, Activity, BarChart3, LucideIcon, X, Check, CheckCircle, XCircle, Clock as ClockIcon } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, Crown, User as UserIcon, TrendingUp, Activity, BarChart3, type LucideIcon, X, Check, CheckCircle, XCircle, Clock as ClockIcon } from 'lucide-react';
 import { toast } from 'sonner';
-import { User, Booking, Notification } from '../App';
+import type { User, Booking, Notification } from '../App';
+import type { JSX } from 'react/jsx-runtime';
 
 interface MyBookingsProps {
   currentUser: User;

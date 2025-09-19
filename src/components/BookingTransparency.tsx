@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import type { JSX } from 'react/jsx-runtime';
 import { motion } from 'framer-motion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { Calendar, Clock, MapPin, Users, Eye, Activity, BarChart3, Check, X, LucideIcon } from 'lucide-react';
-import { Room, Booking } from '../App';
+import { Calendar, Clock, MapPin, Users, Eye, Activity, BarChart3, Check, X, type LucideIcon } from 'lucide-react';
+import type { Room, Booking } from '../App';
 
 interface BookingTransparencyProps {
   bookings: Booking[];

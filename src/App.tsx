@@ -6,6 +6,7 @@ import { NotificationCenter } from './components/NotificationCenter';
 import { MyBookings } from './components/MyBookings';
 import { Footer } from './components/Footer';
 import { Toaster } from './components/ui/sonner';
+import type { JSX } from 'react/jsx-runtime';
 
 // TypeScript interfaces
 export interface User {

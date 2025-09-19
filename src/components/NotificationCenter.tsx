@@ -5,7 +5,8 @@ import { Badge } from './ui/badge';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog';
 import { Bell, Check, X, Calendar, Clock, MapPin, Users, CheckCircle, XCircle } from 'lucide-react';
 import { toast } from 'sonner';
-import { User, Booking, Notification } from '../App';
+import type { User, Booking, Notification } from '../App';
+import type { JSX } from 'react/jsx-runtime';
 
 interface NotificationCenterProps {
   currentUser: User;

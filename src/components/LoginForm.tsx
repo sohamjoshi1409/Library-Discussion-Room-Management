@@ -4,6 +4,7 @@ import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Label } from './ui/label';
 import { BookOpen, Mail, Lock, ArrowRight } from 'lucide-react';
+import type { JSX } from 'react/jsx-runtime';
 
 interface LoginFormProps {
   onLogin: (email: string, name: string) => void;

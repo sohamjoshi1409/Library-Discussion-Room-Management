@@ -1,5 +1,5 @@
 import { BookOpen, Building, Phone, Mail } from 'lucide-react';
-
+import type { JSX } from 'react/jsx-runtime';
 export function Footer(): JSX.Element {
   return (
     <footer className="bg-secondary/50 border-t border-border mt-auto">
@@ -14,7 +14,7 @@ export function Footer(): JSX.Element {
               <h3 className="font-semibold text-foreground">University Library</h3>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Official room booking system for discussion rooms and study spaces. 
+              Official room booking system for discussion rooms and study spaces.
               Manage your reservations efficiently and professionally.
             </p>
           </div>
@@ -44,7 +44,7 @@ export function Footer(): JSX.Element {
               <p>Monday - Friday: 8:00 AM - 8:00 PM</p>
               <p>Saturday - Sunday: 10:00 AM - 6:00 PM</p>
               <p className="pt-2 text-xs">
-                All bookings require 4 confirmed members. 
+                All bookings require 4 confirmed members.
                 Cancellations must be made 2 hours in advance.
               </p>
             </div>
