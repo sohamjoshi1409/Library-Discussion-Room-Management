@@ -70,10 +70,6 @@ export function BookingInterface({
     );
   };
 
-  const getRoomColorClass = (color: string): string => {
-    return 'bg-muted text-muted-foreground border-border';
-  };
-
   const handleMemberChange = (index: number, value: string): void => {
     const newMembers = [...members];
     newMembers[index] = value;

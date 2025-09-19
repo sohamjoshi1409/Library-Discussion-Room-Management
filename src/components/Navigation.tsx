@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from './ui/button';
 import type { User, PageType } from '../App';
 import type { JSX } from 'react/jsx-runtime';

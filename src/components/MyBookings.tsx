@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog';
-import { Calendar, Clock, MapPin, Users, Crown, User as UserIcon, TrendingUp, Activity, BarChart3, type LucideIcon, X, Check, CheckCircle, XCircle, Clock as ClockIcon } from 'lucide-react';
+import { Calendar, Clock, Users, Crown, User as UserIcon, TrendingUp, Activity, BarChart3, type LucideIcon, X, Check, CheckCircle, XCircle, Clock as ClockIcon } from 'lucide-react';
 import { toast } from 'sonner';
 import type { User, Booking, Notification } from '../App';
 import type { JSX } from 'react/jsx-runtime';
@@ -53,7 +53,6 @@ export function MyBookings({ currentUser, bookings, notifications, onCancelBooki
   const [activeTab, setActiveTab] = useState<'upcoming' | 'past'>('upcoming');
 
   const today = new Date();
-  const todayString = today.toISOString().split('T')[0];
 
   const upcomingBookings = bookings.filter(booking => {
     const bookingDate = new Date(booking.date);
@@ -141,19 +140,6 @@ export function MyBookings({ currentUser, bookings, notifications, onCancelBooki
           return 'Pending';
         default:
           return 'Pending';
-      }
-    };
-
-    const getStatusColor = (status: 'accepted' | 'declined' | 'pending') => {
-      switch (status) {
-        case 'accepted':
-          return 'text-green-700';
-        case 'declined':
-          return 'text-red-700';
-        case 'pending':
-          return 'text-yellow-700';
-        default:
-          return 'text-yellow-700';
       }
     };
 
